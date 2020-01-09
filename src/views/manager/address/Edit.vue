@@ -2,7 +2,7 @@
     <briup-fulllayout title="新增地址">
     <div>
         <van-cell-group>
-           <van-field v-model="form.telephone" required="true" placeholder="手机号" />
+           <van-field v-model="form.telephone"  placeholder="手机号" />
         </van-cell-group>
         <van-cell-group>
            <van-field v-model="form.province" placeholder="省" />

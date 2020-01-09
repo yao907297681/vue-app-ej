@@ -7,7 +7,8 @@
                 v-for="item in addresses"
                 :key="item.id"
                 :title="item.province+' '+item.city+' '+item.area+' '+item.address" 
-                >            </van-cell>
+                label="点击修改或删除！"
+                @click="updateHandler(item)">            </van-cell>
           </van-list>
           <br>
          <van-button block type="primary" @click="toAddressEditHandler">
@@ -46,6 +47,13 @@ export default {
         // push forEach silce {1,2,3,4,5,6,7} slice(0,6)
         this.addresses = response.data;
       })
+    },
+    updateHandler(p){
+       this.$router.push({
+        path:"/manager/change",
+        query:p
+      })
+
     },
 
 

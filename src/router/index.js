@@ -15,6 +15,9 @@ import AddressList from '../views/manager/address/List'
 import AddressEdit from '../views/manager/address/Edit'
 import OrderConfirm from '../views/manager/order/Confirm'
 
+import AddressChange from '../views/manager/address/Change'
+
+
 
 Vue.use(VueRouter)
 
@@ -64,6 +67,10 @@ const routes = [
     {
       path: 'address_edit',
       component: AddressEdit,
+    },
+    {
+      path: 'change',
+      component: AddressChange,
     },
   ]
   },
